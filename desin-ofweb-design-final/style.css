@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    background-image: url(./mike-kenneally-TD4DBagg2wE-unsplash.jpg);
+   background-position: center;
+   background-size: center;
+   background-attachment: fixed;
+   height: 100vh;
+color: #fff;
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo{
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid #0000;
+    border-radius: 35px;
+    padding-bottom: 5px;
+}
+
+ul{
+display: flex;
+}
+
+li{
+    margin-left: 27px;
+}
+
+li:first-child{
+    margin-right: 70px;
+}
+
+a{
+        color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+h1{
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #745b37;
+}
+
+.first-letter{
+    font-size: 10.3rem;
+    font-family:  'Roboto', sans-serif;
+    color: #745b37;
+}
+
+h3{
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+
+.btn-coffee{
+    display: block;
+    background-color: #745b37;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-coffee::after{
+    content: Buy;
+    position: absolute;
+    top: 100;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+    .btn-coffee::before:after{
+        top: 0;
+    }
+
+    .about{
+        margin-bottom: 150px;
+    }
+
+    .about-titlte{
+         margin: 60px 0;
+    }
+
+    .about-tittle h2{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: #5b2a02;
+        font-size: 30px;
+        font-weight: 600px;
+    }
+
+    .about-tittle h2::after{
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #5b2a02;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .about-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about-img{
+        width: 40%;
+    }
+
+    .about-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-text{
+        width: 40%;
+    }   
+
+
+    h4{
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 60px;
+        color: #22ab99;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing:0.5rem ;
+        font-weight: 100;
+    }
+  
+    .about-text p{
+        font-size: 15px;
+        text-align: center;
+        color: #2c2727;
+
+    }
+
+    .portfolio{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-item{
+        width: 25%;
+        height: 300px;
+        /* overflow: hidden; */
+    }
+
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: #5b2a02;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+        color: #fff;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .portfolio-item .overlay{
+      
+        margin-bottom: 25px;
+        font-size: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #745b37;    
+    }
+
+    .contact{
+        padding: 10px 0;
+        margin-top: 10px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#5b2a02
+    }
+
+    .contact h2{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: #5b2a02;
+        font-size: 30px;
+        font-weight: 600px;  
+    }
+
+    .contact h2::after{
+            content: "";
+            width: 30px;
+            height: 3px;
+            background-color: #5b2a02;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px; 
+          
+    }
